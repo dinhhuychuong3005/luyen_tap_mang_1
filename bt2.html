@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1,11,15,17,18,4,6,20,21,3];
+    let max = a[0];
+    let vi_tri = 0
+    for (let i = 0;i<a.length;i++){
+        if (a[i]>max){
+             max = a[i];
+             vi_tri = i;
+        }
+    }
+    document.write('so lon nhat la : '+ max + ' o vi tri ' + vi_tri)
+</script>
+</body>
+</html>
