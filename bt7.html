@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [3,5,6,8,4,7,15,18,22,25];
+    let a = +prompt('nhap vao 1 so nguyen duong');
+    let is_found = true
+    for (let i = 0; i < x.length; i++) {
+        if (a == x[i]) {
+            is_found = false
+            x.splice(i,1);
+            x.push(0);
+            document.write(x)
+            break;
+        }
+    }
+    if (is_found == true) {
+        alert(a + ' is not in the array ')
+    }
+</script>
+</body>
+</html>
